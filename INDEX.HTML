@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACH OPERATOR - Profesjonalne Szkolenia UDT, BHP, Energetyczne</title>
+    <style>
+        /* Kolorystyka z Twojego projektu */
+        :root {
+            --bg-dark: #0f172a;       /* Głęboki granat/grafit tła */
+            --card-bg: #1e293b;       /* Kolor kafelków */
+            --accent-gold: #f59e0b;   /* Złoty/Żółty akcent */
+            --text-light: #f8fafc;    /* Jasny tekst */
+            --text-muted: #94a3b8;    /* Przyciemniony tekst opisów */
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Górny pasek kontaktowy (Klikalny!) */
+        .top-bar {
+            background-color: var(--accent-gold);
+            color: #000;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        .top-bar a {
+            color: #000;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        /* Sekcja główna (Hero) */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: var(--text-light);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .hero h1 span {
+            color: var(--accent-gold);
+        }
+        .hero .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+        }
+
+        /* Siatka 4 kafelków */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            padding: 20px;
+        }
+
+        /* Styl pojedynczego kafelka (Efekt kliknięcia i najechania) */
+        .card {
+            background-color: var(--card-bg);
+            border: 2px solid transparent;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: left;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+        }
+        /* Efekt po najechaniu myszką - podświetlenie krawędzi na złoto */
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold);
+            box-shadow: 0 10px 15px -3px rgba(245, 158, 11, 0.2);
+        }
+
+        .card h3 {
+            color: var(--accent-gold);
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .card p {
+            color: var(--text-muted);
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        /* Responsywność dla telefonów */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Pasek kontaktowy -->
+    <div class="top-bar">
+        📞 Tel: <a href="tel:+48696627843">+48 696 627 843</a> | 
+        ✉️ E-mail: <a href="mailto:operatorfach@gmail.com">operatorfach@gmail.com</a>
+    </div>
+
+    <!-- Sekcja nagłówka -->
+    <div class="hero">
+        <h1>FACH <span>OPERATOR</span></h1>
+        <p class="subtitle">Profesjonalne szkolenia i doradztwo techniczne dla firm i pracowników</p>
+
+        <!-- Klikalne kafelki -->
+        <div class="grid">
+            
+            <a href="#udt" class="card">
+                <h3>Szkolenia UDT</h3>
+                <p>Wówki, suwnice, podesty, żurawie. Zdobądź uprawnienia państwowe.</p>
+            </a>
+
+            <a href="#bhp" class="card">
+                <h3>Szkolenia BHP</h3>
+                <p>Instruktaż ogólny, stanowiskowy, szkolenia okresowe dla pracowników.</p>
+            </a>
+
+            <a href="#energetyczne" class="card">
+                <h3>Szkolenia Energetyczne</h3>
+                <p>Uprawnienia energetyczne dla grupy I, II i III (G1, G2, G3).</p>
+            </a>
+
+            <a href="#doradztwo" class="card">
+                <h3>Doradztwo Techniczne</h3>
+                <p>Optymalizacja procesu i zgodność z aktualnymi normami prawnymi.</p>
+            </a>
+
+        </div>
+    </div>
+
+</body>
+</html>
